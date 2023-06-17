@@ -1,0 +1,1211 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.logo {
+  display: flex;
+  font-weight: 700;
+  font-size: 20px;
+  gap: 5px;
+  align-items: center;
+}
+.logo i {
+  color: red;
+  font-size: 20px;
+}
+
+.checkmark {
+  font-size: 20px;
+  color: rgb(6, 109, 143);
+}
+.btn {
+  text-transform: capitalize;
+  font-weight: 500;
+  color: white;
+  background: black;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+  cursor: pointer;
+  font-size: 15px;
+}
+.btn:hover {
+  background: rgb(26, 25, 25) !important;
+}
+
+.mobile_img {
+  display: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  min-height: fit-content;
+  overflow-x: hidden;
+  background: var(--bg-color);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+:root {
+  --text-color1: rgb(79, 77, 77);
+  --bg-color: whitesmoke;
+  --bg-color2: rgb(224, 222, 222);
+}
+p,
+li {
+  color: var(--text-color1);
+  font-weight: 400;
+  font-size: 17px;
+}
+.remove {
+  display: none;
+}
+
+/* home section starts */
+
+.home nav {
+  padding: 20px 0;
+  width: 100%;
+  position: fixed;
+  background: transparent;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.home_container {
+  display: flex;
+  align-items: center;
+}
+.home_container .txt {
+  width: 50%;
+  margin-top: 80px;
+  padding: 0 5% 0 10%;
+}
+
+.home_container .txt h1 {
+  font-size: 50px;
+}
+.home_container .txt p {
+  padding: 15px 0;
+}
+.home_container .txt ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0 50px 0;
+}
+.home_container .txt ul li {
+  display: flex;
+  gap: 10px;
+}
+.home_container .txt .btn {
+  padding: 15px 20px;
+  margin: 10px 0;
+  background: black;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.home_container .txt .partners {
+  margin-top: 20px;
+}
+.home_container .txt .partners p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.home_container .txt .partners div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home_container .txt .partners div img {
+  width: 150px;
+}
+.home_container .img {
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+}
+/* home section ends */
+
+/* explore section starts */
+.explore {
+  width: 100%;
+  height: 100%;
+  min-height: fit-content;
+}
+.explore_nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 25px 0;
+  transition: transform 0.4s ease;
+  background: whitesmoke;
+  z-index: 1000;
+}
+.explore_nav.active {
+  box-shadow: 0 0 10px black;
+}
+.menu_btn {
+  display: none;
+}
+.explore_nav .nav_container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.explore_nav .nav_container .logo {
+  width: 150px;
+}
+.explore_nav .nav_container .links {
+  width: calc(100% - 150px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.explore_nav .nav_container .links a {
+  text-transform: capitalize;
+  color: var(--text-color1);
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+.explore_nav .nav_container .links a:hover {
+  color: black;
+}
+
+.explore_nav .nav_container .links .btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  text-transform: capitalize;
+}
+.explore_nav .nav_container .links .btns a:first-child {
+  font-weight: 500;
+  color: black;
+  cursor: pointer;
+}
+
+.explore_nav .nav_container .links .btns a:last-child {
+  font-weight: 500;
+  color: white;
+  font-size: 13px;
+  background: black;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+.wrapper {
+  margin-top: 130px;
+}
+.explore {
+  height: 100%;
+  min-height: fit-content;
+}
+
+.explore .welcome_section {
+  background: rgb(224, 222, 222);
+  padding: 50px 40px 70px 40px;
+}
+.explore .welcome_section .txt {
+  width: 400px;
+}
+.explore .welcome_section .txt h2 {
+  font-size: 35px;
+}
+.explore .welcome_section .txt p {
+  padding: 20px 0;
+}
+.explore .welcome_section .search_col {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.explore .welcome_section .search_col .input {
+  width: 60%;
+  height: 45px;
+  position: relative;
+}
+.explore .welcome_section .search_col .input i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 700;
+  font-size: 20px;
+  color: grey;
+}
+.explore .welcome_section .search_col .input input {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0 10px 35px;
+  background: whitesmoke;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+.explore .welcome_section .search_col button {
+  padding: 9px 20px;
+}
+.explore .welcome_section a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: var(--text-color1);
+  transition: 0.3s ease;
+}
+.explore .welcome_section a:hover {
+  color: black;
+}
+
+.explore .camps_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.explore .camps_section .box {
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 480px;
+}
+.explore .camps_section .box:hover .img img {
+  animation: rollimage 6s infinite;
+}
+@keyframes rollimage {
+  0% {
+    width: 110%;
+    height: 110%;
+  }
+  25% {
+    width: 130%;
+    height: 130%;
+    transform: translate(-30px, -30px);
+  }
+  50% {
+    width: 150%;
+    height: 150%;
+    transform: translate(-40px, -40px);
+  }
+  75% {
+    width: 120%;
+    height: 120%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+.explore .camps_section .box .img {
+  width: 100%;
+  height: 250px;
+  border-radius: inherit;
+  overflow: hidden;
+}
+.explore .camps_section .box .img img {
+  transition: 0.3s ease;
+}
+.explore .camps_section .box .tx {
+  height: calc(100% - 250px);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.explore .camps_section .box h3 {
+  font-size: 20px;
+}
+.explore .camps_section .box p {
+  padding: 15px 0;
+}
+.explore .camps_section .box button {
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  text-transform: capitalize;
+  font-weight: 500;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.explore .camps_section .box button a {
+  color: black;
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+.explore .camps_section .box button:hover {
+  background: rgb(226, 224, 224);
+}
+/* explore section ends */
+
+/* view acmp_section starts */
+.view_camp {
+  height: 100%;
+  min-height: fit-content;
+}
+.view_camp .back {
+  position: fixed;
+  background: whitesmoke;
+  box-shadow: 0 0 5px black;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  left: inherit;
+  top: 110px;
+  cursor: pointer;
+}
+.view_camp .back i {
+  font-weight: 700;
+}
+.view_camp .con {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+.view_camp .con .map {
+  width: 45%;
+  height: 500px;
+  border: 1px solid grey;
+  padding: 30px;
+  border-radius: 5px;
+  /* height: fit-content; */
+}
+.view_camp .con .map iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.view_camp .con .camp_con {
+  width: 50%;
+}
+.view_camp .con .camp_con .about_camp {
+  padding: 30px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+.view_camp .con .camp_con .about_camp .img {
+  width: 100%;
+  height: 350px;
+  border-radius: inherit;
+  overflow: hidden;
+}
+.view_camp .con .camp_con .about_camp .txt {
+  padding-top: 20px;
+}
+.view_camp .con .camp_con .about_camp .txt .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.view_camp .con .camp_con .about_camp .txt .title h3 {
+  font-size: 25px;
+}
+.view_camp .con .camp_con .about_camp .txt .title p {
+  font-size: 13px;
+  font-weight: 700;
+  color: black;
+}
+.view_camp .con .camp_con .about_camp .txt p {
+  padding: 20px 0;
+}
+.view_camp .con .camp_con .about_camp .txt cite {
+  font-size: 17px;
+  color: var(--text-color1);
+}
+
+.view_camp .con .camp_con .reviews {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  padding: 30px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+.view_camp .con .camp_con .reviews .bx {
+  padding: 30px 0;
+  border-top: 1px solid grey;
+}
+.view_camp .con .camp_con .reviews .bx:first-child {
+  border-top: none;
+}
+
+.view_camp .con .camp_con .reviews .bx span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.view_camp .con .camp_con .reviews .bx span h4 {
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.view_camp .con .camp_con .reviews .bx span p {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.view_camp .con .camp_con .reviews .btn_con {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  padding: 0;
+}
+.view_camp .con .camp_con .reviews .btn_con button {
+  padding: 15px 20px;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.view_camp .con .camp_con .reviews .btn_con button i {
+  padding: 0;
+  font-size: 20px;
+}
+/* view acmp_section ends */
+
+/* addcomment section starts */
+.addcomment {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  box-shadow: 0 0 10px black;
+  transform: translate(-50%, 110%);
+  background: white;
+  border-radius: 10px;
+  padding: 40px;
+  z-index: 99;
+  transition: 0.4s ease;
+  visibility: hidden;
+}
+.addcomment.active {
+  visibility: visible;
+  transform: translate(-50%, -50%);
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: 0.4s ease;
+}
+.overlay.active {
+  visibility: visible;
+  opacity: 0.5;
+  pointer-events: all;
+}
+.addcomment .modal_close {
+  padding: 5px;
+  background: var(--bg-color2);
+  font-size: 15px;
+  color: black;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+.addcomment h2 {
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.addcomment .input_fields {
+  width: 100%;
+  height: fit-content;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.addcomment .input_fields .box:first-child {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+}
+.addcomment .input_fields .box input {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  border-radius: inherit;
+  background: var(--bg-color2);
+}
+.addcomment .input_fields .box:first-child label {
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 15px;
+  top: 13px;
+  left: 15px;
+  pointer-events: none;
+  transition: 0.4s ease;
+  color: var(--text-color1);
+}
+.addcomment .input_fields .box:first-child input:focus ~ label,
+.addcomment .input_fields .box:first-child input:valid ~ label {
+  transform: translateY(-30px);
+  color: black;
+  font-weight: 500;
+}
+.addcomment .input_fields .box:last-child {
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+  position: relative;
+}
+.addcomment .input_fields .box:last-child textarea {
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color2);
+  border-radius: inherit;
+  padding: 10px 20px;
+}
+.addcomment .input_fields .box:last-child label {
+  position: absolute;
+  text-transform: uppercase;
+  top: 10px;
+  left: 15px;
+  font-size: 15px;
+  transition: 0.4s ease;
+  color: var(--text-color1);
+  pointer-events: none;
+}
+.addcomment .input_fields .box:last-child textarea:focus ~ label,
+.addcomment .input_fields .box:last-child textarea:valid ~ label {
+  transform: translateY(-30px);
+  color: black;
+  font-weight: 500;
+}
+.addcomment button {
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 5px;
+  color: white;
+  background: black;
+  text-transform: capitalize;
+}
+/* addcomment section ends */
+
+/* add new camp starts */
+.addnew_camp {
+  width: 550px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -180%);
+  visibility: hidden;
+  height: 100vh;
+  overflow-x: scroll;
+  padding: 110px 20px 50px 20px;
+  transition: 0.4s ease;
+}
+.addnew_camp.active {
+  visibility: visible;
+  transform: translate(-50%, -50%);
+}
+
+.addnew_camp .modal_close {
+  padding: 5px;
+  background: var(--bg-color2);
+  font-size: 15px;
+  color: black;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+
+.addnew_camp .con {
+  background: whitesmoke;
+  box-shadow: 0 0 10px black;
+  border-radius: 5px;
+  padding: 50px;
+}
+.addnew_camp::-webkit-scrollbar {
+  display: none;
+}
+.addnew_camp h2 {
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.addnew_camp .form {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+.addnew_camp .form .box {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  border-radius: 5px;
+}
+.addnew_camp .form .box input {
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color2);
+  border-radius: inherit;
+  padding: 0 15px;
+}
+.addnew_camp .form .box label {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  color: var(--text-color1);
+  text-transform: uppercase;
+  pointer-events: none;
+  transition: 0.4s ease;
+}
+
+.addnew_camp .form .box input:focus ~ label,
+.addnew_camp .form .box input:valid ~ label {
+  transform: translateY(-35px);
+  font-weight: 500;
+  color: black;
+}
+.addnew_camp .form .box:nth-child(4) {
+  height: 200px;
+  width: 100%;
+  border-radius: 5px;
+}
+.addnew_camp .form .box textarea {
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color2);
+  border-radius: inherit;
+  padding: 15px;
+}
+
+.addnew_camp .form .box textarea:focus ~ label,
+.addnew_camp .form .box textarea:valid ~ label {
+  transform: translateY(-35px);
+  font-weight: 500;
+  color: black;
+}
+
+.addnew_camp .form button {
+  width: 100%;
+  padding: 15px 0;
+  color: white;
+  background: black;
+  text-transform: capitalize;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.success_modal {
+  width: fit-content;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 0 10px black;
+  position: fixed;
+  transform: translate(-50%, -300%);
+  top: 50%;
+  left: 50%;
+  background: whitesmoke;
+  border-radius: 5px;
+  transition: 0.4s ease;
+  visibility: hidden;
+  pointer-events: none;
+}
+.success_modal.active {
+  transform: translate(-50%, -50%);
+  visibility: visible;
+  pointer-events: all;
+}
+.success_modal .checkmark {
+  font-size: 60px;
+}
+.success_modal h3 {
+  font-size: 25px;
+}
+
+.error_modal {
+  width: fit-content;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 0 10px black;
+  position: fixed;
+  transform: translate(-50%, -300%);
+  top: 50%;
+  left: 50%;
+  background: whitesmoke;
+  border-radius: 5px;
+  transition: 0.4s ease;
+  cursor: pointer;
+  visibility: hidden;
+  pointer-events: none;
+}
+.error_modal.active {
+  transform: translate(-50%, -50%);
+  visibility: visible;
+  pointer-events: all;
+}
+.error_modal i {
+  font-size: 30px;
+  color: white;
+  padding: 20px;
+  background: lightcoral;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.error_modal p span {
+  font-weight: 500;
+}
+.error_modal h3 {
+  font-size: 20px;
+}
+/* add new camp ends */
+footer {
+  width: 100%;
+  margin-top: 30px;
+  padding: 25px 0;
+}
+
+/* login / create account section starts */
+.login_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.login_container .col_1 {
+  width: 60%;
+  padding: 0 150px;
+}
+.login_container .col_1 .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 25px 0;
+}
+
+.login_container .col_1 .heading a {
+  color: var(--text-color1);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+}
+
+.login_container .col_1 .heading a i {
+  font-weight: 700;
+}
+
+.login_container .col_1 .heading a:hover {
+  color: black;
+}
+.login_container .col_1 .form {
+  margin-top: 100px;
+}
+
+.login_container .col_1 .form h2 {
+  font-size: 40px;
+}
+.login_container .col_1 .form .input_fields {
+  margin-top: 70px;
+  width: 100%;
+}
+.login_container .col_1 .form .input_fields .box {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.login_container .col_1 .form .input_fields .box input {
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color2);
+  border-radius: inherit;
+  padding: 0 20px;
+}
+
+.login_container .col_1 .form .input_fields .box label {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  color: var(--text-color1);
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: 0.4s ease;
+  pointer-events: none;
+}
+
+.login_container .col_1 .form .input_fields .box input:focus ~ label,
+.login_container .col_1 .form .input_fields .box input:valid ~ label {
+  color: black;
+  transform: translateY(-40px);
+  font-weight: 500;
+}
+.login_container .col_1 .form .input_fields button {
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 5px;
+  color: white;
+  background: black;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.login_container .col_1 .form p span {
+  color: rgb(9, 93, 120);
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 17px;
+}
+
+.login_container .col_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--bg-color2);
+  padding: 0 100px;
+  width: 40%;
+  gap: 20px;
+}
+.login_container .col_2 h3 {
+  font-size: 20px;
+}
+.login_container .col_2 .avater {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.login_container .col_2 .avater img {
+  width: 50px;
+}
+.login_container .col_2 .avater p {
+  font-size: 13px;
+}
+/* login / create account section ends */
+
+@media (max-width: 1024px) {
+  .home nav .container {
+    width: 90%;
+  }
+  .home_container .txt {
+    padding: 0 5% 0 5%;
+  }
+  .home_container .txt h1 {
+    font-size: 40px;
+  }
+  .home_container .txt .partners div img {
+    width: 100px;
+  }
+  .explore .camps_section {
+    grid-template-columns: 1fr 1fr;
+  }
+  .login_container .col_1 {
+    width: 60%;
+    padding: 0 50px;
+  }
+  .login_container .col_1 .form h2 {
+    font-size: 30px;
+  }
+  .login_container .col_2 {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .destop_img {
+    display: none;
+  }
+  .mobile_img {
+    display: block;
+  }
+  .home nav {
+    background: var(--bg-color);
+    box-shadow: 0 0 10px black;
+    padding: 25px;
+  }
+  .home_container {
+    flex-direction: column-reverse;
+  }
+  .home_container .txt {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .home_container .img {
+    width: 100%;
+    height: 500px;
+  }
+  .home_container .txt .partners div {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .view_camp .con {
+    flex-direction: column-reverse;
+  }
+  .view_camp .con .map {
+    width: 100%;
+  }
+  .view_camp .con .camp_con {
+    width: 100%;
+  }
+}
+
+@media (max-width: 724px) {
+  .explore .camps_section {
+    grid-template-columns: 1fr;
+  }
+  .explore .camps_section .box {
+    padding: 30px 50px;
+    height: fit-content;
+  }
+
+  .login_container .col_1 .form {
+    margin-top: 30px;
+  }
+  .login_container {
+    height: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  .login_container .col_1 {
+    width: 100%;
+    padding: 0 100px 50px 100px;
+  }
+  .login_container .col_1 .form h2 {
+    font-size: 30px;
+  }
+  .login_container .col_2 {
+    width: 100%;
+    padding: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav_container {
+    justify-content: space-between;
+  }
+  .explore_nav .nav_container .links {
+    position: fixed;
+    right: 5px;
+    top: 90px;
+    flex-direction: column;
+    gap: 20px;
+    background: whitesmoke;
+    box-shadow: 0 0 10px black;
+    padding: 20px;
+    border-radius: 5px;
+    width: 200px;
+    transform: translateX(110%);
+    transition: 0.4s ease;
+  }
+  .explore_nav .nav_container .links.active {
+    transform: translateX(0);
+  }
+  .menu_btn {
+    display: block;
+    height: 30px;
+    width: 30px;
+  }
+  .menu_btn img:first-child {
+    width: 30px;
+    display: block;
+  }
+  .menu_btn img:last-child {
+    width: 15px;
+    display: none;
+  }
+  .menu_btn.active img:first-child {
+    display: none;
+  }
+  .menu_btn.active img:last-child {
+    display: block;
+  }
+  .explore_nav .nav_container .links .btns {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .explore .camps_section .box {
+    padding: 30px;
+  }
+
+  .explore .welcome_section {
+    background: rgb(224, 222, 222);
+    padding: 50px 40px 70px 40px;
+  }
+  .explore .welcome_section .txt {
+    width: 100%;
+  }
+  .addcomment {
+    width: 80%;
+  }
+  .addnew_camp {
+    width: 90%;
+    padding: 150px 20px 50px 20px;
+  }
+  .success_modal {
+    width: 80%;
+    justify-content: center;
+  }
+  .error_modal {
+    width: 80%;
+  }
+  .login_container .col_1 {
+    padding: 0 50px 50px 50px;
+  }
+
+  .login_container .col_2 {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 90%;
+  }
+  .addcomment {
+    width: 90%;
+    padding: 30px 20px;
+  }
+  .addcomment h2 {
+    font-size: 20px;
+  }
+  .addnew_camp {
+    width: 95%;
+  }
+  .addnew_camp .con {
+    padding: 30px 20px;
+  }
+  .addnew_camp .con h2 {
+    font-size: 20px;
+  }
+  .explore .welcome_section .search_col {
+    flex-direction: column;
+  }
+  .explore .welcome_section .search_col .input {
+    width: 100%;
+  }
+
+  .explore .camps_section .box {
+    padding: 20px;
+  }
+  .login_container .col_1 {
+    padding: 0 20px 50px 20px;
+  }
+
+  .login_container .col_2 {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  p,
+  li {
+    font-size: 15px;
+  }
+  .btn {
+    font-size: 13px;
+  }
+  .home_container .txt {
+    padding: 20px 10px;
+  }
+  .home_container .txt h1 {
+    font-size: 30px;
+  }
+  .home_container .txt .partners p {
+    font-size: 16px;
+  }
+  .container {
+    width: 90%;
+  }
+
+  .explore .welcome_section {
+    background: rgb(224, 222, 222);
+    padding: 50px 20px 70px 20px;
+  }
+
+  .explore .welcome_section .txt h2 {
+    font-size: 25px;
+  }
+  .explore .welcome_section a {
+    font-size: 15px;
+  }
+  .explore .camps_section .box {
+    padding: 15px 10px;
+  }
+  .view_camp .con .camp_con .about_camp {
+    padding: 15px 10px;
+  }
+  .view_camp .con .camp_con .reviews {
+    padding: 15px 10px;
+  }
+  .view_camp .con .map {
+    padding: 10px;
+  }
+  .addnew_camp .form .box label {
+    font-size: 13px;
+  }
+  .addcomment .input_fields .box:first-child label {
+    font-size: 13px;
+  }
+  .addcomment .input_fields .box:last-child label {
+    font-size: 13px;
+  }
+  .login_container .col_1 .heading a p {
+    display: none;
+  }
+  .login_container .col_1 .heading a {
+    padding: 10px;
+    background: var(--bg-color2);
+    border-radius: 50%;
+  }
+  .login_container .col_1 .form .input_fields .box label {
+    font-size: 13px;
+  }
+}
